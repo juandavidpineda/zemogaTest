@@ -1,0 +1,30 @@
+{
+  "name": "portfolionode",
+  "version": "0.0.1",
+  "description": "This is a basic portfolio on Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev --respawn --transpile-only index.ts",
+    "prod": "tsc && node ./dist/index.js",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.10.0",
+    "aws-elasticsearch-connector": "^9.0.1",
+    "aws-sdk": "^2.799.0",
+    "lodash": "^4.17.20",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.8",
+    "@types/lodash": "^4.14.165",
+    "@types/twitter": "^1.7.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
+  }
+}
